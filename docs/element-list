@@ -1,0 +1,6 @@
+com.example.TestTask
+com.example.TestTask.controllers
+com.example.TestTask.controllerTests
+com.example.TestTask.dtos
+com.example.TestTask.services
+com.example.TestTask.serviceTests
