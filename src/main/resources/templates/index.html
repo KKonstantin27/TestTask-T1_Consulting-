@@ -9,7 +9,7 @@
 <div class="fluid-container justify-content-center mt-5 row">
     <form th:method="POST" th:action="@{/count}" th:object="${StringQueryDTO}" class="col-6">
         <div class="d-flex justify-content-center">
-            <input class="col-7 h-100 m-0 p-1" th:field="*{stringQuery}" type="text" name="StringQuery"  placeholder="Input your string">
+            <input class="col-7 h-100 m-0 p-1" th:field="*{stringQuery}" type="text" name="StringQuery"  placeholder="Input your string" required>
             <button class="btn btn-light col-3 h-100 m-0 p-1">Count characters</button>
         </div>
         <div class="text-danger text-center d-block" th:if="${#fields.hasErrors('stringQuery')}" th:errors="*{stringQuery}"></div>

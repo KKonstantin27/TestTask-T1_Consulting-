@@ -25,7 +25,6 @@ public class CounterPageController {
         this.countCharactersService = countCharactersService;
     }
 
-
     @PostMapping(value = "/count", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> countCharacters(@ModelAttribute("StringQueryDTO") @Valid StringQueryDTO stringQueryDTO,
                                              BindingResult bindingResult) {
