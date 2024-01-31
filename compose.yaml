@@ -1,0 +1,6 @@
+version: "3"
+services:
+  test-task:
+    image: crystalised/test-task
+    ports:
+      - '8080:8080'
